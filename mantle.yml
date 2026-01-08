@@ -1,0 +1,55 @@
+# Mantle Configuration
+# https://mantledeploy.vercel.app/
+
+environments:
+  - label: dev
+    branches:
+      - main
+    targetAccess: private
+
+  - label: staging
+    branches:
+      - staging
+    targetAccess: friends
+
+  - label: production
+    branches:
+      - release/*
+    targetAccess: public
+
+target:
+  experience:
+    # Replace with your experience asset ID or leave commented to create new
+    # assetId: ${{ secrets.EXPERIENCE_ID }}
+
+    configuration:
+      genre: all
+      playableDevices:
+        - computer
+        - phone
+        - tablet
+        - console
+      playability: private
+      privateServers: disabled
+      enableStudioAccessToApis: true
+      allowThirdPartySales: false
+      allowThirdPartyTeleports: false
+      avatarType: r6
+
+    places:
+      start:
+        # Replace with your place asset ID or leave commented to create new
+        # assetId: ${{ secrets.START_PLACE_ID }}
+        file: src/places/start/start.rbxlx
+        configuration:
+          name: "My Multiplace Game"
+
+      # Add more places here using: npm run add-place <name>
+      # Example:
+      # lobby:
+      #   assetId: ${{ secrets.LOBBY_PLACE_ID }}
+      #   file: src/places/lobby/lobby.rbxlx
+      #   configuration:
+      #     name: "Lobby"
+
+state: local

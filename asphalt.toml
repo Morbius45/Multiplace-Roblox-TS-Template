@@ -1,0 +1,31 @@
+# Asphalt Configuration
+# https://github.com/rojo-rbx/asphalt
+
+name = "game-assets"
+
+# Target configuration for syncing to Roblox
+[[target.roblox]]
+codegen-path = "src/game/shared/assets/index.ts"
+asset-cache-path = "asset-cache.toml"
+
+# Target configuration for development (local file system)
+[[target.development]]
+codegen-path = "src/game/shared/assets/index.ts"
+
+# Include all images from the assets folder
+[[inputs]]
+glob = "assets/images/**/*.png"
+codegen-base-path = "src/game/shared/assets"
+
+[[inputs]]
+glob = "assets/images/**/*.jpg"
+codegen-base-path = "src/game/shared/assets"
+
+# Include all sounds
+[[inputs]]
+glob = "assets/sounds/**/*.mp3"
+codegen-base-path = "src/game/shared/assets"
+
+[[inputs]]
+glob = "assets/sounds/**/*.ogg"
+codegen-base-path = "src/shared/assets"

@@ -1,0 +1,75 @@
+{
+  "name": "multiplace-game",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Game": {
+        "$path": "out/game/shared"
+      },
+      "Places": {
+        "$className": "Folder",
+        "start": {
+          "$path": "out/places/start/src/shared"
+        }
+      },
+      "Assets": {
+        "$path": "assets"
+      },
+      "rbxts_include": {
+        "$path": "include",
+        "node_modules": {
+          "$className": "Folder",
+          "@rbxts": {
+            "$path": "node_modules/@rbxts"
+          },
+          "@rbxts-js": {
+            "$path": "node_modules/@rbxts-js"
+          },
+          "@flamework": {
+            "$path": "node_modules/@flamework"
+          }
+        }
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Game": {
+        "$path": "out/game/server"
+      },
+      "Places": {
+        "$className": "Folder",
+        "start": {
+          "$path": "out/places/start/src/server"
+        }
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Game": {
+          "$path": "out/game/client"
+        },
+        "Places": {
+          "$className": "Folder",
+          "start": {
+            "$path": "out/places/start/src/client"
+          }
+        }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "FilteringEnabled": true
+      }
+    },
+    "SoundService": {
+      "$className": "SoundService",
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}

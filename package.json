@@ -1,0 +1,61 @@
+{
+  "name": "roblox-ts-template",
+  "version": "1.0.0",
+  "description": "Roblox-TS template with Flamework, Lapis, Remo, Reflex, React, Mantle, and Asphalt",
+  "main": "out/init.lua",
+  "scripts": {
+    "build": "rbxtsc -p tsconfig.json --rojo build.project.json",
+    "build:start": "rbxtsc -p tsconfig.start.json --rojo build-start.project.json",
+    "watch": "rbxtsc -w -p tsconfig.json --rojo build.project.json",
+    "watch:start": "rbxtsc -w -p tsconfig.start.json --rojo build-start.project.json",
+    "serve": "rojo serve default.project.json",
+    "serve:start": "rojo serve src/places/start/start.project.json",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\"",
+    "dev:start": "concurrently \"npm run watch:start\" \"npm run serve:start\"",
+    "add-place": "node scripts/add-place.js",
+    "remove-place": "node scripts/remove-place.js",
+    "build-place": "node scripts/build-place.js",
+    "mantle:deploy": "mantle deploy",
+    "mantle:outputs": "mantle outputs",
+    "asphalt:sync": "asphalt sync --target roblox",
+    "asphalt:sync-dev": "asphalt sync --target development"
+  },
+  "keywords": [
+    "roblox",
+    "roblox-ts",
+    "flamework",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rbxts/compiler-types": "3.0.0-types.0",
+    "@rbxts/types": "^1.0.827",
+    "concurrently": "^8.2.2",
+    "roblox-ts": "^3.0.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@flamework/core": "^1.3.2",
+    "@rbxts/flamework": "^0.0.11",
+    "@rbxts/lapis": "^0.3.6",
+    "@rbxts/matter": "^0.8.5",
+    "@rbxts/object-utils": "^1.0.4",
+    "@rbxts/pretty-react-hooks": "^0.6.4",
+    "@rbxts/react": "^17.3.7-ts.1",
+    "@rbxts/react-reflex": "^0.3.7",
+    "@rbxts/react-ripple": "^3.0.1",
+    "@rbxts/react-roblox": "^17.3.7-ts.1",
+    "@rbxts/reflex": "^4.3.1",
+    "@rbxts/remo": "^1.5.3",
+    "@rbxts/ripple": "^0.10.1",
+    "@rbxts/services": "^1.5.4",
+    "@rbxts/signal": "^1.1.1",
+    "@rbxts/t": "^3.2.1",
+    "@rbxts/trove": "^1.3.0",
+    "@rbxts/validate-tree": "^2.0.2",
+    "eslint": "^9.39.2",
+    "prettier": "^3.7.4",
+    "rbxts-transformer-flamework": "^1.3.2"
+  }
+}

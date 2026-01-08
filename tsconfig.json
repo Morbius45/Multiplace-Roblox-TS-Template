@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "noLib": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleDetection": "force",
+    "strict": true,
+    "target": "ESNext",
+    "typeRoots": ["node_modules/@rbxts", "node_modules/@flamework"],
+    "outDir": "out",
+    "baseUrl": "src",
+    "rootDirs": ["src/game", "src/places"],
+    "paths": {
+      "game/*": ["game/*"],
+      "shared/*": ["game/shared/*"]
+    },
+    "plugins": [
+      {
+        "transform": "rbxts-transformer-flamework"
+      }
+    ],
+    "incremental": true,
+    "tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
+    "declaration": false
+  },
+  "include": ["src/game/**/*", "src/places/**/*"]
+}
