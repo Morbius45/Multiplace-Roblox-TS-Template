@@ -1,10 +1,9 @@
 // Player Data Schema
 
 export interface PlayerData {
-	joinedAt: number;
-	// Add your fields here
+  joinedAt: number;
 }
 
 export const DEFAULT_PLAYER_DATA: PlayerData = {
-	joinedAt: 0,
+  joinedAt: 0,
 };

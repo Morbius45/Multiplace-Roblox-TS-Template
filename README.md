@@ -28,11 +28,11 @@ This template is designed as a **multiplace framework**, allowing you to:
 
 ```bash
 # Using degit (recommended - no git history)
-npx degit your-username/roblox-ts-multiplace-template my-game
+npx degit Morbius45/roblox-ts-multiplace-template my-game
 cd my-game
 
 # Or clone directly
-git clone https://github.com/your-username/roblox-ts-multiplace-template.git my-game
+git clone https://github.com/Morbius45/roblox-ts-multiplace-template.git my-game
 cd my-game
 ```
 
